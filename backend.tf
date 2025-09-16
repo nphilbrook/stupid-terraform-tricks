@@ -4,7 +4,7 @@ terraform {
     organization = "philbrook"
 
     workspaces {
-      name = "test-data-env"
+      name = "stupid-terraform-tricks"
     }
   }
 }
