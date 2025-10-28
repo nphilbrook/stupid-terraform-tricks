@@ -20,7 +20,7 @@ variable "TFC_WORKSPACE_SLUG" {
 }
 
 locals {
-    ws_parts = split("/", var.TFC_WORKSPACE_SLUG)
+  ws_parts = split("/", var.TFC_WORKSPACE_SLUG)
 }
 
 data "tfe_workspace" "also_this" {
