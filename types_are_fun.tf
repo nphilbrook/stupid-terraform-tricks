@@ -11,10 +11,10 @@ output "booleans_are_fun" {
   value = tolist([]) == []
 }
 
-output "casting_will_work" {
+output "casting_wont_save_you" {
   value = tolist([]) == var.list_variable
 }
 
-output "or_just_use_length" {
+output "just_use_length" {
   value = length(var.list_variable) == 0
 }
