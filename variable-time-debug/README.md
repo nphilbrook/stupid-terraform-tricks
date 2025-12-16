@@ -57,6 +57,7 @@ A `random_pet` resource is included to demonstrate actual infrastructure changes
 ## Notes / Warnings
 
 - To use this approach, you must self-host an agent somewhere where you can access the filesystem to create the files.
+- To repeat, *if you try to run this code using the default global agent pool on HCP Terraform, it will never complete*
 - The paths `/home/ubuntu/agent/finish_plan` and `/home/ubuntu/agent/finish_apply` are specific to the environment where this is intended to run (likely a Terraform Cloud/Enterprise agent running on Ubuntu)
 - You may need to adjust these paths based on your execution environment
 - Remember to clean up the signal files between runs if you want to test the wait behavior multiple times
